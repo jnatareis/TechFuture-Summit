@@ -1,0 +1,112 @@
+/* Paleta de cores */
+:root {
+    --primaria: #1e3a8a;
+    --secundaria: #3b82f6;
+    --fundo: #f0f4f8;
+    --texto: #111827;
+    --branco: #ffffff;
+}
+
+/* Reset e base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+/* Hero image */
+.hero {
+    background-image: url('techsummit.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Seções */
+section {
+    padding: 30px 20px;
+    margin: 20px;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--primaria);
+    margin-top: 0;
+}
+
+/* Palestrantes */
+#palestrantes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.palestrante {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.palestrante img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--secundaria);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Responsividade (ainda em coluna, mas com ajustes possíveis futuros) */
+@media (min-width: 768px) {
+    #palestrantes {
+        flex-direction: column;
+    }
+
+    .palestrante {
+        max-width: 100%;
+    }
+}
