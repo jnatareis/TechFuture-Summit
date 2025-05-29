@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechFuture Summit</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Imagem de fundo -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TechFuture Summit</h1>
+        </div>
+    </header>
+
+    <!-- Sobre o Evento -->
+    <section id="sobre">
+        <h2>Sobre o Evento</h2>
+        <p><strong>Data:</strong> 26/05/2025</p>
+        <p><strong>Local:</strong> Salvador - BA</p>
+        <p>
+            O evento apresenta as inovações em <strong>robôs assistentes com habilidades sociais</strong> e seu papel no futuro da <strong>tecnologia doméstica</strong>.
+            Especialistas da área mostram como essas soluções estão transformando tarefas do dia a dia, oferecendo mais praticidade,
+            interação e acessibilidade dentro de casa.
+        </p>
+    </section>
+
+    <!-- Palestrantes -->
+    <section id="palestrantes">
+        <h2>Palestrantes</h2>
+
+        <div class="palestrante">
+            <img src="Allan Port.jpg" alt="Foto de Allan Port" />
+            <h3>Allan Port</h3>
+            <p>
+                <strong>Fundador e Diretor Executivo – Neurobyte</strong><br />
+                Allan Port iniciou sua trajetória na Universidade Federal da Bahia, 
+                onde se formou em Administração e, em seguida, em Ciência da Computação. Unindo visão de negócios e conhecimento técnico,
+                desenvolveu o sistema base que sustenta a empresa até hoje. Atualmente, supervisiona direta e indiretamente o progresso de 
+                todos os serviços e projetos, garantindo inovação e excelência em cada entrega.
+            </p>
+        </div>
+
+        <div class="palestrante">
+            <img src="Cristiane Oliveira.jpg" alt="Foto de Cristiane Oliveira" />
+            <h3>Cristiane Oliveira</h3>
+            <p>
+                <strong>Gerente de Desenvolvimento – Neurobyte</strong><br />
+                Cristiane Oliveira é especialista em desenvolvimento de software,
+                com ampla experiência na liderança de projetos inovadores e reconhecidos pelo mercado. Atua diretamente na criação de soluções 
+                tecnológicas de alto impacto, coordenando equipes e promovendo a excelência técnica em todas as fases do desenvolvimento.
+                Seu trabalho tem contribuído ativamente para o crescimento e a consolidação da Neurobyte como referência em inovação.
+            </p>
+        </div>
+
+        <div class="palestrante">
+            <img src="Sandra Castello.jpg" alt="Foto de Sandra Castello" />
+            <h3>Sandra Castello</h3>
+            <p>
+                <strong>Administradora da Filial SP – Neurobyte</strong><br />
+                Sandra Castello é referência em robótica assistiva e uma voz ativa na promoção da inclusão feminina na tecnologia.
+                Com uma gestão comprometida com inovação e impacto social, lidera iniciativas que integram tecnologia de ponta a propósitos 
+                transformadores. Sua atuação tem fortalecido a presença da Neurobyte no cenário paulista e ampliado as fronteiras da 
+                acessibilidade tecnológica.
+            </p>
+        </div>
+    </section>
+
+    <!-- Formulário de Inscrição -->
+    <section id="inscricao">
+        <h2>Inscreva-se no Evento</h2>
+        <form action="#" method="get">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" minlength="3" maxlength="25" required />
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required />
+
+            <p><strong>Tipo de ingresso:</strong></p>
+            <label><input type="radio" name="ingresso" value="presencial" required /> Presencial</label>
+            <label><input type="radio" name="ingresso" value="online" /> Online</label>
+
+            <label><input type="checkbox" name="termos" required /> Eu aceito os termos e condições</label>
+
+            <button type="submit">Enviar Inscrição</button>
+        </form>
+    </section>
+
+</body>
+</html>
